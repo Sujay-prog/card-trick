@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Card</title>
+  <style>
+    body {
+      background: #000;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .reveal-box {
+      border: 2px solid white;
+      padding: 40px 50px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(3px);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 20px;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal-box">
+    <h1>Your card is…</h1>
+    <h1 style="color: #ff4d6d;">♥️ 7 of Hearts</h1> <!-- change card here -->
+    <h2>Now look at your camera.</h2>
+  </div>
+</body>
+</html>
